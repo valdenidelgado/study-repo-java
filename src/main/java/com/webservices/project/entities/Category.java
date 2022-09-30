@@ -1,5 +1,7 @@
 package com.webservices.project.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
@@ -14,7 +16,8 @@ public class Category {
     private Long id;
     private String name;
 
-    @Transient
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categories")
     private Set<Product> product = new HashSet<>();
 
     public Category(){}
