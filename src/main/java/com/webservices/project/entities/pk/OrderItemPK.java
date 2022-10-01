@@ -1,6 +1,5 @@
 package com.webservices.project.entities.pk;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.webservices.project.entities.Order;
 import com.webservices.project.entities.Product;
 
