@@ -6,12 +6,14 @@ public class Bee1007 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        float a = sc.nextFloat();
-        float b = sc.nextFloat();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
 
-        double average = (a * 3.5 + b * 7.5) / 11;
+        int difference = a * b - c * d;
 
-        System.out.printf("MEDIA = %.5f\n", average);
+        System.out.printf("DIFERENCA = %d\n", difference);
         sc.close();
     }
 }
