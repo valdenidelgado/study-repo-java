@@ -6,12 +6,14 @@ public class Bee1008 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        float a = sc.nextFloat();
-        float b = sc.nextFloat();
+        int idEmployee = sc.nextInt();
+        int numberHours = sc.nextInt();
+        double valuePerHour = sc.nextDouble();
 
-        double average = (a * 3.5 + b * 7.5) / 11;
+        double salary = numberHours * valuePerHour;
 
-        System.out.printf("MEDIA = %.5f\n", average);
+        System.out.printf("NUMBER = %d\n", idEmployee);
+        System.out.printf("SALARY = U$ %.2f\n", salary);
         sc.close();
     }
 }
